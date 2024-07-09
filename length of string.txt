@@ -1,0 +1,7 @@
+def calculate_string_length():
+    user_input = input("Enter a string: ")
+    length_of_string = len(user_input)
+    print(f"Length of the String: {length_of_string}")
+
+# Call the function
+calculate_string_length()
