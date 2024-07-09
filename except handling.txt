@@ -1,0 +1,55 @@
+def demonstrate_exception_handling():
+    try:
+        # Example 1: Division by zero
+        numerator = 10
+        denominator = 0
+        result = numerator / denominator
+        print("Result of division:", result)
+
+    except ZeroDivisionError as e:
+        print(f"Error: Division by zero is not allowed. {e}")
+
+    try:
+        # Example 2: Accessing an invalid index in a list
+        my_list = [1, 2, 3]
+        print(my_list[5])
+
+    except IndexError as e:
+        print(f"Error: List index out of range. {e}")
+
+    try:
+        # Example 3: Performing an invalid operation on a type
+        text = "Hello"
+        number = 5
+        result = text + number
+        print("Result of addition:", result)
+
+    except TypeError as e:
+        print(f"Error: Invalid operation on different types. {e}")
+
+    try:
+        # Example 4: Accessing a key that doesn't exist in a dictionary
+        my_dict = {"name": "Alice", "age": 30}
+        print(my_dict["address"])
+
+    except KeyError as e:
+        print(f"Error: Key not found in dictionary. {e}")
+
+    try:
+        # Example 5: Opening a file that doesn't exist
+        with open("non_existent_file.txt", "r") as file:
+            content = file.read()
+            print(content)
+
+    except FileNotFoundError as e:
+        print(f"Error: File not found. {e}")
+
+    try:
+        # Example 6: Catching a generic exception
+        value = int("abc")
+        print("Converted value:", value)
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+demonstrate_exception_handling()
