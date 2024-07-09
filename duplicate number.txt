@@ -1,0 +1,6 @@
+sorted_array = [1, 2, 2, 3, 4, 4, 4, 5, 6, 6, 7]
+unique_array = []
+for num in sorted_array:
+    if not unique_array or num != unique_array[-1]:
+        unique_array.append(num)
+print("Array without duplicates:", unique_array)
