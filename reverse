@@ -1,0 +1,2 @@
+str="someshwar"[::-1]
+print(str)
