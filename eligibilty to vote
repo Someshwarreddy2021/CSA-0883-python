@@ -1,0 +1,8 @@
+age=int(input("enter an year:"))
+if age>=18:
+    print("you are eligible to vote")
+else:
+    years_to_wait=18-age
+    print(f"you are not eligible to vote,you are eligible to vote after{years_to_wait} years")
+    
+
